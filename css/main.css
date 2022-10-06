@@ -1,0 +1,252 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+/* Base styles: opinionated defaults */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background-color: rgb(100, 255, 218);
+  color: rgb(10, 25, 47);
+  text-shadow: none;
+}
+
+::selection {
+  background-color: rgb(100, 255, 218);
+  color: rgb(10, 25, 47);
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Custom styles */
+
+html {
+  background-color: rgb(10, 25, 47);
+  color: rgb(179 185 204);
+}
+
+body {
+  padding: 1em;
+  font-family: 'PT Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+  max-width: 40em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(100, 255, 218);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  margin: 1em 0 2em 0;
+}
+
+.menu-item {
+  color: rgb(230, 241, 255);
+  font-weight: bold;
+  margin-right: 0.75em;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1em;
+}
+
+.greeting {
+  margin-bottom: 2em;
+}
+
+.hello {
+  color: rgb(100, 255, 218);
+  margin-bottom: 0.5em;
+}
+
+.heading {
+  color: rgb(230, 241, 255);
+  margin: 0;
+  line-height: 1;
+}
+
+.subheading {
+  line-height: 1;
+  margin-top: 0.5em;
+}
+
+.footer {
+  margin: 2em 0 1em 0;
+}
+
+/* Helper classes */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (min-width: 27em) {
+  .heading {
+    font-size: 3em;
+  }
+
+  .subheading {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 35em) {
+  .heading {
+    font-size: 4em;
+  }
+}
+
+/* Print styles */
+
+@media print {
+
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
