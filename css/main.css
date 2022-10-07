@@ -250,3 +250,19 @@ a:hover {
     page-break-after: avoid;
   }
 }
+
+/* Animation Queries */
+@keyframes slide-in {
+	0% {
+    opacity: 0;
+    transform: translateX(-1em);
+	}
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animation {
+  animation: slide-in 1s ease-in-out;
+}

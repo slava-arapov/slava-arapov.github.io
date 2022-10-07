@@ -15,11 +15,11 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css?v=1.1">
+  <link rel="stylesheet" href="css/main.css?v=1.2">
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" as="font" rel="stylesheet">
 
   <meta name="theme-color" content="#8892b0">
 </head>
@@ -36,34 +36,31 @@
     </nav>
   </header>
   <main>
-    <div class="greeting">
+    <div class="greeting animate">
       <div class="hello">Привет, меня зовут</div>
       <h1 class="heading">Вячеслав Арапов</h1>
       <h3 class="subheading">Я веб-разработчик из&nbsp;Воронежа</h3>  
     </div>
-    <img class="avatar"
+    <img class="avatar animate"
          alt="Арапов Вячеслав"
          src="img/arapov-400.jpg"
          srcset="img/arapov-400.jpg 400w,
                  img/arapov-800.jpg 800w,
                  img/arapov-1200.jpg 1200w" />
-    <picture>
-      <source srcset="" media="(max-width: 600px)">
-    </picture>
     
-    <p>💚 Создаю веб-приложения на Vue.js и PHP, сейчас делаю сайты в&nbsp;<a href="http://cchgeu.ru/" target="_blank">ВГТУ</a>.</p>
-    <p>✏️ Делюсь полезными заметками и собираю ссылки в цифровом саду <a href="https://notes.arapov.net" target="_blank">notes.arapov.net</a>.</p>
-    <p>🧞 Делаю <a href="https://myjinn.com" target="_blank">социальную сеть «Мой&nbsp;Джинн»</a>, в&nbsp;которой можно исполнить желания из публичных списков участников. В&nbsp;проекте 2000+&nbsp;«джиннов» и 500+&nbsp;исполненных желаний.</p>
-    <p>👨‍💻 Погружаюсь в&nbsp;предметную область, настраиваю технические процессы, продумываю архитектуру, разрабатываю и
+    <p class="animate">💚 Создаю веб-приложения на Vue.js и PHP, сейчас делаю сайты в&nbsp;<a href="http://cchgeu.ru/" target="_blank">ВГТУ</a>.</p>
+    <p class="animate">✏️ Делюсь полезными заметками и собираю ссылки в цифровом саду <a href="https://notes.arapov.net" target="_blank">notes.arapov.net</a>.</p>
+    <p class="animate">🧞 Делаю <a href="https://myjinn.com" target="_blank">социальную сеть «Мой&nbsp;Джинн»</a>, в&nbsp;которой можно исполнить желания из публичных списков участников. В&nbsp;проекте 2000+&nbsp;«джиннов» и 500+&nbsp;исполненных желаний.</p>
+    <p class="animate">👨‍💻 Погружаюсь в&nbsp;предметную область, настраиваю технические процессы, продумываю архитектуру, разрабатываю и
       поддерживаю веб-проекты для&nbsp;стартапов и небольшого бизнеса.</p>
-    <p>🛠️ Могу быстро спроектировать и запустить MVP, создать проект с&nbsp;нуля и доработать существующий, делать SPA и MPA,
+    <p class="animate">🛠️ Могу быстро спроектировать и запустить MVP, создать проект с&nbsp;нуля и доработать существующий, делать SPA и MPA,
       работаю один и в&nbsp;команде. Например:</p>
-    <ul>
+    <ul class="animate">
       <li>Для&nbsp;стартапа <a href="https://treelink.ru/" target="_blank">Treelink</a> упростил производство «умных стендов» и фотоальбомов с&nbsp;«капсулами времени».</li>
       <li>Для&nbsp;тренеров, администраторов и руководителей <a href="https://gymvrn.com/" target="_blank">спортивной школы «Резонанс»</a> сделал CRM-систему.</li>
       <li>Для&nbsp;арт-объекта <a href="https://vk.com/love_cube" target="_blank">«Куб Любви»</a> c&nbsp;виртуальными «свадебными замками» автоматизировал процессы от&nbsp;заказа и оплаты до&nbsp;управления страницей события.</li>
     </ul>
-    <p>👋 Пишите на&nbsp;почту <a href="mailto:mail@arapov.net">mail@arapov.net</a> или в&nbsp;Телеграме: <a href="https://t.me/slava_arapov" target="_blank">@slava_arapov</a></p>
+    <p class="animate">👋 Пишите на&nbsp;почту <a href="mailto:mail@arapov.net">mail@arapov.net</a> или в&nbsp;Телеграме: <a href="https://t.me/slava_arapov" target="_blank">@slava_arapov</a></p>
   </main> 
 
   <footer class="footer">
@@ -73,7 +70,7 @@
     <div><small>ИП Арапов Вячеслав Сергеевич, ИНН 362703848161, ОГРНИП 321366800011173</small></div>
   </footer>
   
-  <script src="js/main.js?v=1.0"></script>
+  <script src="js/main.js?v=1.1"></script>
 
 </body>
 
